@@ -2,6 +2,6 @@
 - hosts: all 
   tasks:
    - name: create of log dir for wordpress
-     command: mkdir -p /root/ansi
+     command: mkdir -p /home/t/ansi
      become: yes
      become_user: t
