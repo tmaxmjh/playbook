@@ -1,0 +1,10 @@
+hosts: all
+  remote_user: t
+  tasks:
+          - name: install pkg
+            apt: pkg=lrzsz state=installed update_cache=true
+            become: yes
+            become_method: sudo
+            become_user: root
+
+
