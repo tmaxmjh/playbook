@@ -1,6 +1,7 @@
 ---
-- hosts: all
-  connection: local
+- hosts: all 
   tasks:
-    - name: Creates directory
-      file: path=/root/test state=directory
+   - name: create of log dir for wordpress
+     command: mkdir -p /root/ansi
+     become: yes
+     become_user: t
