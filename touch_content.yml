@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: Ansible create file with content example
+    copy:
+      dest: "/home/t/content.txt"
+      content: |
+        dog1
+        tiger
+
